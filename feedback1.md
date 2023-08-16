@@ -26,9 +26,10 @@ l'organisation de tes dossiers/fichiers. Par exemple, tu as intégré le tableau
 
 ☑️ **Petit exemple d'optimisation et de compréhension de ton code** par rapport à la programmation orientée objet concernant la méthode teacher() de ton TeacherController. Je constate que tu as instancié un objet de la classe Teacher. Cela n'était pas forcement nécessaire dans ce cas de figure car tu ne vas pas le remplir de toute façon. Lorsque tu as besoin d'appeler une méthode spécifique à une classe et que l'instanciation d'un objet n'est pas obligatoire tu peux utiliser la syntaxe suivante : Teacher::findAll(); Cela t'aurais permis de remplacer les lignes suivantes :
 
-``$newteacher = new Teacher();
-
-$teacher = $newteacher->findAll();``
+``
+$newteacher = new Teacher();
+$teacher = $newteacher->findAll();
+``
 
 par
 
