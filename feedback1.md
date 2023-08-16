@@ -38,7 +38,7 @@ $teacher = Teacher::findAll();
 ``
 
 ☑️ **Au niveau de la sécurité**, je vois que tu as pensé à préparer certaines requêtes SQL mais pas toutes. Pense bien à le faire partout parce que c'est fondamental pour te protéger des injections SQL. Egalement, n'hésite pas à aller voir la correction pour regarder comment est implémentée la partie CSRF avec la gestion des Tokens. C'est une faille fondamentale contre laquelle il faut se protéger à tout prix 🙂 
-> Enfin, ce serait sympa que tu regardes comment sécuriser les accès à tes dossiers via les htaccess parce que c'est dangereux de permettre l'ouverture de dossier et la lecture de fichier depuis un navigateur. Tu pourras voir par exemple que dans la correction il y a un htacces qui protège le dossier app de l'application. Tu pourras ainsi constater que si tu ne le fais pas et bien on peut par exemple accéder à ton fichier config.ini et ainsi obtenir les identifiants de ta base de données 😈
+> Enfin, ce serait très important que tu regardes comment sécuriser les accès à tes dossiers via les htaccess parce que c'est dangereux de permettre l'ouverture de dossier et la lecture de fichier depuis un navigateur. Tu pourras voir par exemple que dans la correction il y a un htacces qui protège le dossier app de l'application. Tu pourras ainsi constater que si tu ne le fais pas et bien on peut par exemple accéder à ton fichier config.ini et ainsi obtenir les identifiants de ta base de données 😈
 
 ## BILAN
 Franchement dans l'ensemble c'est du très bon travail et on sens que tu as cherché à comprendre ce que tu as fait donc je te dis bravo. Prends le temps de bien regarder la correction et tu vas rapidement comprendre tes erreurs j'en suis persuadé ! 
