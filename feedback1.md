@@ -36,7 +36,7 @@ par
 ``
 $teacher = Teacher::findAll();
 ``
-> J'en profite pour te faire un rappel sur Camel Case avec par exemple la création des variables qui dont les mots doivent commencer par des majuscules sauf pour le premier : $newTeacher 😉
+> J'en profite pour te faire un rappel sur Camel Case avec par exemple la déclaration des variables dont chaque mot doit commencer par une majuscule sauf pour le premier : $newTeacher 😉
 
 
 ☑️ **Au niveau de la sécurité**, je vois que tu as pensé à préparer certaines requêtes SQL mais pas toutes. Pense bien à le faire partout parce que c'est fondamental pour te protéger des injections SQL. Egalement, n'hésite pas à aller voir la correction pour regarder comment est implémentée la partie CSRF avec la gestion des Tokens. C'est une faille fondamentale contre laquelle il faut se protéger à tout prix 🙂 
