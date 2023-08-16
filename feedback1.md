@@ -6,13 +6,15 @@ Comme tu l'as demandé, je t'ai préparé un petit feedback du parcours S06.
 Let's go !
 
 ##Avancée globale sur le projet
+
 Tout d'abord je tenais à te dire que c'était du bon travail avec une belle avancée.
 Sur le Let's code tu as validé les parties 1, 2, 3, 4, 5 et 6.
 Globalement, tu as bien appliqué ce que tu as appris et ca fait plaisir 😉
 
 ##Mes retours :
 
-Quelques petits ajustements sont à revoir :
+**Quelques petits ajustements sont à revoir :**
+
 ☑️ Première chose, n'hésite pas à bien répartir tes éléments dans des fichiers spécifiques pour améliorer
 l'ogranisation de tes dossiers/fichiers. Par exemple, tu as intégré le tableau lié aux autorisations de tes routes directement dans ton CoreController. Tu aurais pu créer un fichier acl.php et faire un require_once dans ton contrôleur ensuite. **Tu trouveras l'exemple dont je parle dans la correction du parcours**
 
