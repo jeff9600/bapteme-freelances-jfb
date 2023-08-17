@@ -12,20 +12,20 @@ On va utiliser ton formulaire de modification de professeur pour te montrer.
 Du coup rdv dans ta vue teacher_update.tpl.php ou tu vas ajouter le code suivant pour commencer :
 
 `` 
-    document.getElementById("submitBtn").addEventListener("click", () => {
-    const formData = new FormData(document.getElementById("teacherForm"));
+document.getElementById("submitBtn").addEventListener("click", () => {
+const formData = new FormData(document.getElementById("teacherForm"));
 
-    fetch("", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Données enregistrées :", data);
-        // Faire quelque chose avec la réponse du serveur (si nécessaire)
-    })
-    .catch(error => {
-        console.error("Erreur :", error);
-    });
+fetch("", {
+    method: "POST",
+    body: formData
+})
+.then(response => response.json())
+.then(data => {
+    console.log("Données enregistrées :", data);
+    // Faire quelque chose avec la réponse du serveur (si nécessaire)
+})
+.catch(error => {
+    console.error("Erreur :", error);
+});
 });
 ``
