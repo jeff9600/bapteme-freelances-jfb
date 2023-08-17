@@ -12,6 +12,7 @@ On va utiliser ton formulaire de modification de professeur pour te montrer.
 Du coup rdv dans ta vue teacher_update.tpl.php ou tu vas ajouter le code suivant pour commencer :
 
 ``` 
+<script>
 document.getElementById("submitBtn").addEventListener("click", () => {
 const formData = new FormData(document.getElementById("teacherForm"));
 fetch("", {
@@ -27,4 +28,5 @@ fetch("", {
     console.error("Erreur :", error);
 });
 });
+</script>
 ``` 
