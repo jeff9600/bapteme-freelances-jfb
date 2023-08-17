@@ -22,11 +22,16 @@ fetch("", {
 .then(response => response.json())
 .then(data => {
     console.log("Données enregistrées :", data);
-    // Faire quelque chose avec la réponse du serveur (si nécessaire)
 })
 .catch(error => {
     console.error("Erreur :", error);
 });
 });
 </script>
-``` 
+```
+Le script ci-dessus te permettra d'appliquer une méthode fetch avec POST à partir de ton formulaire. 
+Tu constateras que les guillemets juste après fetch sont vides parce que comme je te le disais dans ton feedback, on est déjà sur la route de traitement de formulaire donc il n'y pas besoin de la renseigner. En revanche, si ton traitement s'était fait via une autre route, il aurait fallu la renseigner. J'ai oublie de te préciser que j'ai ajouté deux lignes avant le fetch pour faire du "tuning" sur ton formulaire. En gros je dis que dès tu cliques sur le bouton ayant pour id submitBtn cela créé un objet de la classe FormData da Javascript qui va te permetre de collecter les données transmises dans un formulaire en les associants par clé/valeur Nom, Teddy par exemple.
+
+Lorsque tu auras copié/collé ce code dans ta vue, il faudra ajouter l'id teacherForm à ton formulaire dans le code HTML puis que tu ajoutes l'id submitBtn à ton bouton d'envoi afin que l'événement click puisse se déclencher. Enfin, il te restera à remplacer le type="submit" de ton bouton d'envoi par un type="button" de manière à ce que l'envoi de ton formulaire ne se fasse pas via PHP. Après cela, si tu testes ton formulaire en modifiant par exemple le prénom d'un professeur, tu pourras aller voir que ta base de données à été mise à jour alors que ta page n'a pas été rechargée !
+
+Alors mon exemple n'est clairement pas optimal puisque ta méthode teacherUpdatePost() sur ton contrôleur ne renvoie pas de JSON ce qui fait tu ne pourras pas travailler sur la réponse du serveur entre autre mais le principe est là et tu n'as plus qu'à aller creuser pour optimiser tout cela 🙂
