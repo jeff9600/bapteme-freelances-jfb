@@ -11,7 +11,7 @@ Déjà fetch() est une méthode récente qui consiste à envoyer, afficher, rece
 On va utiliser ton formulaire de modification de professeur pour te montrer.
 Du coup rdv dans ta vue teacher_update.tpl.php ou tu vas ajouter le code suivant pour commencer :
 
-`` <script>
+`` 
     document.getElementById("submitBtn").addEventListener("click", () => {
     const formData = new FormData(document.getElementById("teacherForm"));
 
@@ -28,5 +28,4 @@ Du coup rdv dans ta vue teacher_update.tpl.php ou tu vas ajouter le code suivant
         console.error("Erreur :", error);
     });
 });
-</script>
 ``
