@@ -14,7 +14,6 @@ Du coup rdv dans ta vue teacher_update.tpl.php ou tu vas ajouter le code suivant
 `` 
 document.getElementById("submitBtn").addEventListener("click", () => {
 const formData = new FormData(document.getElementById("teacherForm"));
-
 fetch("", {
     method: "POST",
     body: formData
