@@ -35,3 +35,5 @@ Tu constateras que les guillemets juste après fetch sont vides parce que comme 
 Lorsque tu auras copié/collé ce code dans ta vue, il faudra ajouter l'id teacherForm à ton formulaire dans le code HTML puis que tu ajoutes l'id submitBtn à ton bouton d'envoi afin que l'événement click puisse se déclencher. Enfin, il te restera à remplacer le type="submit" de ton bouton d'envoi par un type="button" de manière à ce que l'envoi de ton formulaire ne se fasse pas vers PHP. Après cela, si tu testes ton formulaire en modifiant par exemple le prénom d'un professeur, tu pourras aller voir que ta base de données à été mise à jour alors que ta page n'a pas été rechargée !
 
 Alors mon exemple n'est clairement pas optimal puisque ta méthode teacherUpdatePost() sur ton contrôleur ne renvoie pas de JSON ce qui fait tu ne pourras pas travailler sur la réponse du serveur entre autre mais le principe est là et tu n'as plus qu'à aller creuser pour optimiser tout cela 🙂
+
+Pour terminer, voici une page qui explique plutôt bien ce qu'est la méthode [fetch] (https://fr.javascript.info/fetch) 
