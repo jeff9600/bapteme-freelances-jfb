@@ -36,4 +36,4 @@ Lorsque tu auras copié/collé ce code dans ta vue, il faudra ajouter l'id teach
 
 Alors mon exemple n'est clairement pas optimal puisque ta méthode teacherUpdatePost() sur ton contrôleur ne renvoie pas de JSON ce qui fait tu ne pourras pas travailler sur la réponse du serveur entre autre mais le principe est là et tu n'as plus qu'à aller creuser pour optimiser tout cela 🙂
 
-Pour terminer, voici une page qui explique plutôt bien ce qu'est la méthode [fetch] (https://fr.javascript.info/fetch) 
+Pour terminer, voici une page qui explique plutôt bien ce qu'est la méthode fetch() https://fr.javascript.info/fetch 
