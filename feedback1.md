@@ -11,7 +11,7 @@ Tout d'abord je tenais à te dire que c'était du bon travail avec une belle ava
 Sur le Let's code tu as validé les parties 1, 2, 3, 4, 5 et 6.
 Concernant la partie 7 c'était presque ça parce que tu avais juste oublié de gérer le fait qu'un utilisateur peut juste voir la liste des professeurs sans pouvoir les ajouter/modifier/supprimer.
 J'ai vu que tu avais même fait certains bonus donc c'est vraiment top !
-Globalement, tu as bien appliqué ce que tu as appris et ca fait plaisir 😉
+Globalement, tu as bien appliqué ce que tu as appris et ça fait plaisir 😉
 
 ## Mes retours :
 
@@ -24,7 +24,7 @@ Globalement, tu as bien appliqué ce que tu as appris et ca fait plaisir 😉
 ☑️ N'hésite pas à bien répartir tes éléments dans des fichiers spécifiques pour améliorer
 l'organisation de tes dossiers/fichiers. Par exemple, tu as intégré le tableau lié aux autorisations de tes routes directement dans ton CoreController. Tu aurais pu créer un fichier acl.php et faire un require_once dans ton contrôleur ensuite. **Tu trouveras l'exemple dont je parle dans la correction du parcours**
 
-☑️ **Petit exemple d'optimisation et de compréhension de ton code** par rapport à la programmation orientée objet concernant la méthode teacher() de ton TeacherController. Je constate que tu as instancié un objet de la classe Teacher. Cela n'était pas forcement nécessaire dans ce cas de figure car tu ne vas pas le remplir de toute façon. Lorsque tu as besoin d'appeler une méthode spécifique à une classe et que l'instanciation d'un objet n'est pas obligatoire tu peux utiliser la syntaxe suivante : Teacher::findAll(); Cela t'aurais permis de remplacer les lignes suivantes :
+☑️ **Petit exemple d'optimisation et de compréhension de ton code** par rapport à la programmation orientée objet concernant la méthode teacher() de ton TeacherController. Je constate que tu as instancié un objet de la classe Teacher. Cela n'était pas forcément nécessaire dans ce cas de figure car tu ne vas pas le remplir de toute façon. Lorsque tu as besoin d'appeler une méthode spécifique à une classe et que l'instanciation d'un objet n'est pas obligatoire tu peux utiliser la syntaxe suivante : Teacher::findAll(); Cela t'aurais permis de remplacer les lignes suivantes :
 
 ``
 $newteacher = new Teacher();
@@ -39,7 +39,7 @@ $teacher = Teacher::findAll();
 > J'en profite pour te faire un rappel sur Camel Case avec par exemple la déclaration des variables dont chaque mot doit commencer par une majuscule sauf pour le premier : $newTeacher 😉
 
 
-☑️ **Au niveau de la sécurité**, je vois que tu as pensé à préparer certaines requêtes SQL mais pas toutes. Pense bien à le faire partout parce que c'est fondamental pour te protéger des injections SQL. Egalement, n'hésite pas à aller voir la correction pour regarder comment est implémentée la partie CSRF avec la gestion des Tokens. C'est une faille fondamentale contre laquelle il faut se protéger à tout prix 🙂. Aussi concernant Git, pense bien à remplir ton .gitignore en ajoutant ton fichier config.ini cela permettra de dire à Git que tu ne veux pas qu'il prenne en compte ce fichier lors des commits etc. Cela est très important car si ton dépot est public tout le monde pourra voir tes identifiants de connexion à la base de données et plus en fonction de ce que ton application à besoin.
+☑️ **Au niveau de la sécurité**, je vois que tu as pensé à préparer certaines requêtes SQL mais pas toutes. Pense bien à le faire partout parce que c'est fondamental pour te protéger des injections SQL. Egalement, n'hésite pas à aller voir la correction pour regarder comment est implémentée la partie CSRF avec la gestion des Tokens. C'est une faille fondamentale contre laquelle il faut se protéger à tout prix 🙂. Aussi concernant Git, pense bien à remplir ton .gitignore en ajoutant ton fichier config.ini cela permettra de dire à Git que tu ne veux pas qu'il prenne en compte ce fichier lors des commits etc. Cela est très important car si ton dépot est public tout le monde pourra voir tes identifiants de connexion à la base de données et plus en fonction de ce que ton application a besoin.
 > Enfin, ce serait très important que tu regardes comment sécuriser les accès à tes dossiers via les htaccess parce que c'est dangereux de permettre l'ouverture de dossier et la lecture de fichier depuis un navigateur. Tu pourras voir par exemple que dans la correction il y a un htacces qui protège le dossier app de l'application. Tu pourras ainsi constater que si tu ne le fais pas et bien on peut par exemple accéder à ton fichier config.ini et ainsi obtenir les identifiants de ta base de données 😈
 
 ## BILAN

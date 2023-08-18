@@ -9,7 +9,7 @@ Déjà fetch() est une méthode récente qui consiste à envoyer, afficher, rece
 ## Explication par le code
 
 On va utiliser ton formulaire de modification de professeur pour te montrer.
-Du coup rdv dans ta vue teacher_update.tpl.php ou tu vas ajouter le code suivant pour commencer :
+Du coup rdv dans ta vue teacher_update.tpl.php où tu vas ajouter le code suivant pour commencer :
 
 ``` 
 <script>
